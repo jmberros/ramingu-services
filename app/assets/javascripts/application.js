@@ -13,4 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require services
+//= require jquery.fullPage.min
+//= require jquery.easings.min
+//= require jquery.slimscroll.min
 //= require_tree .
