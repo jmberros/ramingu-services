@@ -1,15 +1,44 @@
+#fullpage {
+  font-family: 'Georgia';
+  /*text-align: center;*/
+}
+
+.title {
+  border-radius: 20px;
+  background-color: tomato;
+  color: MidnightBlue;
+  opacity: 0.75;
+  padding: 25px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 100px;
+}
+.subtitle {
+  color: black;
+  background-color: DarkGreen;
+  opacity: 0.75;
+  font-size: 40px;
+  padding: 0 150px;
+}
+.list {
+  text-align: left;
+  background-color: blue;
+  opacity: 0.75;
+}
+
 #landing {
-  /*background: asset-url('living-table.jpg') no-repeat center center fixed;*/
+  background: asset-url('living-table.jpg') no-repeat center center fixed;
   /*background-size: 100%;*/
+  padding: 25px;
 }
 
 #copywriting {
-  /*background: asset-url('map.jpg') no-repeat center center fixed;*/
+  background: asset-url('map.jpg') no-repeat center center fixed;
   /*background-size: 100%;*/
 }
 
 #translation {
-  /*background: asset-url('notebook-calvin.jpg') no-repeat center center fixed;*/
+  background: asset-url('notebook-calvin.jpg') no-repeat center center fixed;
   /*background-size: 100%;*/
 }
 
@@ -31,28 +60,7 @@
 /*}*/
 
 /*#landing {*/
-  /*margin-top: 50px;*/
-  /*padding: 25px;*/
-  /*background-color: gray;*/
-  /*border-radius: 20px;*/
-  /*opacity: 0.9;*/
-  /*font-family: 'Georgia';*/
-  /*[>border: 1px solid lime; //<]*/
-  /*text-align: center;*/
   /*line-height: 1;*/
-  /*.title {*/
-    /*color: MidnightBlue;*/
-    /*padding: 25px;*/
-    /*[>border: 1px solid black; //<]*/
-    /*font-weight: bold;*/
-    /*font-style: italic;*/
-    /*font-size: 200px;*/
-  /*}*/
-  /*.subtitle {*/
-    /*[>border: 1px solid black; //<]*/
-    /*font-size: 40px;*/
-    /*padding: 0 150px;*/
-  /*}*/
   /*.subtitle-small {*/
     /*[>border: 1px solid black; //<]*/
     /*font-size: 30px;*/

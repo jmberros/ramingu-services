@@ -31,9 +31,9 @@ $ ->
 
     ## Design
     controlArrows: true,
-    verticalCentered: true,
+    verticalCentered: false, #
     resize : false,
-    sectionsColor : ['#ccc', '#fff'],
+    #sectionsColor : ['#ccc', '#fff'],
     paddingTop: '3em',
     paddingBottom: '10px',
     fixedElements: '#header, .footer',
