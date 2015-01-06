@@ -6,15 +6,32 @@ en:
     subtitle: Creative copywriting and translation services
   copywriting:
     title: Copywriting
-    subtitle: |
+    subtitle: |-
       Writing copy requires more than just stringing words together to make them fit.
       It requires thought, insight, and creativity.
     creative:
+      title: Creative
       bullet_1: Storyboard creation
+      bullet_2: Infographic concepts and texts
+      bullet_3: Campaign ideas and branding
+    social_media:
+      title: Social Media
+      bullet_1: Strategy and analysis
+      bullet_2: 'Community management '
+      bullet_3: Content
+      bullet_4: Blog posts
+    music: Original compositions for videos, commercials, teasers, and jingles
   translation:
     title: Translation
-    subtitle_a: |-
-      “Translation is the most intimate act of reading.”
-      Gayatri Chakravorty Spivak
-    subtitle_b: Our native familiarity of both English and Spanish background guarantees
+    quote: '"Translation is the most intimate act of reading." - Gayatri Chakravorty
+      Spivak'
+    subtitle: Our native familiarity of both English and Spanish background guarantees
       the essence of what you are trying to communicate will not be lost.
+    bullet_1: Scripts
+    bullet_2: Subtitles
+    bullet_3: Presentations
+    bullet_4: Legal documents
+    bullet_5: Corporate communication
+    bullet_6: Proofreading
+    bullet_7: |
+      Web pages

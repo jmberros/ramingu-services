@@ -1,63 +1,71 @@
-html {
-}
-
-body {
-  font-family: 'Helvetica';
-  padding: 30px;
-  background: asset-url('living-table.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  /*background-size: 100% auto;*/
-}
-
-h1 {
-  margin: 0px;
-}
-
-.footer {
-  /*border: 1px solid lime; //*/
-  height: 10vh;
-  background-color: gray;
-}
-
 #landing {
-  margin-top: 50px;
-  padding: 25px;
-  background-color: gray;
-  border-radius: 20px;
-  opacity: 0.9;
-  font-family: 'Georgia';
-  /*border: 1px solid lime; //*/
-  text-align: center;
-  line-height: 1;
-  .title {
-    color: MidnightBlue;
-    padding: 25px;
-    /*border: 1px solid black; //*/
-    font-weight: bold;
-    font-style: italic;
-    font-size: 200px;
-  }
-  .subtitle {
-    /*border: 1px solid black; //*/
-    font-size: 40px;
-    padding: 0 150px;
-  }
-  .subtitle-small {
-    /*border: 1px solid black; //*/
-    font-size: 30px;
-    padding: 0 150px;
-  }
-}
-
-#translations {
-  background: asset-url('notebook-calvin.jpg') no-repeat center center;
-  background-size: 100% auto;
+  /*background: asset-url('living-table.jpg') no-repeat center center fixed;*/
+  /*background-size: 100%;*/
 }
 
 #copywriting {
-  background: asset-url('map.jpg') no-repeat center center;
-  background-size: 100% auto;
+  /*background: asset-url('map.jpg') no-repeat center center fixed;*/
+  /*background-size: 100%;*/
 }
+
+#translation {
+  /*background: asset-url('notebook-calvin.jpg') no-repeat center center fixed;*/
+  /*background-size: 100%;*/
+}
+
+/*body {*/
+/*}*/
+
+/*h1 {*/
+  /*margin: 0px;*/
+/*}*/
+
+/*.section {*/
+  /*height: 100vh;*/
+/*}*/
+
+/*.footer {*/
+  /*[>border: 1px solid lime; //<]*/
+  /*height: 10vh;*/
+  /*background-color: gray;*/
+/*}*/
+
+/*#landing {*/
+  /*margin-top: 50px;*/
+  /*padding: 25px;*/
+  /*background-color: gray;*/
+  /*border-radius: 20px;*/
+  /*opacity: 0.9;*/
+  /*font-family: 'Georgia';*/
+  /*[>border: 1px solid lime; //<]*/
+  /*text-align: center;*/
+  /*line-height: 1;*/
+  /*.title {*/
+    /*color: MidnightBlue;*/
+    /*padding: 25px;*/
+    /*[>border: 1px solid black; //<]*/
+    /*font-weight: bold;*/
+    /*font-style: italic;*/
+    /*font-size: 200px;*/
+  /*}*/
+  /*.subtitle {*/
+    /*[>border: 1px solid black; //<]*/
+    /*font-size: 40px;*/
+    /*padding: 0 150px;*/
+  /*}*/
+  /*.subtitle-small {*/
+    /*[>border: 1px solid black; //<]*/
+    /*font-size: 30px;*/
+    /*padding: 0 150px;*/
+  /*}*/
+/*}*/
+
+/*#translations {*/
+  /*background: asset-url('notebook-calvin.jpg') no-repeat center center;*/
+  /*background-size: 100% auto;*/
+/*}*/
+
+/*#copywriting {*/
+  /*background: asset-url('map.jpg') no-repeat center center;*/
+  /*background-size: 100% auto;*/
+/*}*/
