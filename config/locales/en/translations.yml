@@ -1,7 +1,20 @@
 ---
 en:
+  site_name: Copylingual
   landing:
     title: Copylinugal
-    subtitle: Copywriting and translation services
+    subtitle: Creative copywriting and translation services
   copywriting:
     title: Copywriting
+    subtitle: |
+      Writing copy requires more than just stringing words together to make them fit.
+      It requires thought, insight, and creativity.
+    creative:
+      bullet_1: Storyboard creation
+  translation:
+    title: Translation
+    subtitle_a: |-
+      “Translation is the most intimate act of reading.”
+      Gayatri Chakravorty Spivak
+    subtitle_b: Our native familiarity of both English and Spanish background guarantees
+      the essence of what you are trying to communicate will not be lost.

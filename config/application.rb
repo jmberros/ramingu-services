@@ -23,10 +23,9 @@ module RaminguServices
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
 
-    # add yml path
-    config.i18n.load_path += \
-      Dir[Rails.root.join('config', 'locales', '*', '*.yml').to_s]
-    # locals to support:
-    config.i18n.available_locales = %i( en )
+    config.i18n.load_path += Dir[Rails.root.join('config/locales/**/*.yml')]
+    config.i18n.available_locales = [:en]
+    config.i18n.default_locale = :en
+    I18n.enforce_available_locales = false
   end
 end
