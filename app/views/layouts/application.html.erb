@@ -3,16 +3,20 @@
 <head>
   <title>RaminguServices</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= stylesheet_link_tag    'jquery.fullPage', media: 'all' %>
   <%= stylesheet_link_tag    'bootstrap.min', media: 'all' %>
-  <%= javascript_include_tag 'jquery.fullPage.min.js' %>
-  <%= javascript_include_tag 'jquery.easings.min.js' %>
-  <%= javascript_include_tag 'jquery.slimscroll.min.js' %>
+  <%= stylesheet_link_tag    'jquery-ui.min', media: 'all' %>
+  <%= stylesheet_link_tag    'jquery-ui.structure.min', media: 'all' %>
+  <%= stylesheet_link_tag    'jquery-ui.theme.min', media: 'all' %>
+
+  <%= javascript_include_tag 'jquery-1.11.2.min.js' %>
+  <%= javascript_include_tag 'jquery-ui.min.js' %>
   <%= javascript_include_tag 'application' %>
   <%= javascript_include_tag 'bootstrap.min' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<%= render partial: 'shared/sidebar' %>
 
 <%= yield %>
 
