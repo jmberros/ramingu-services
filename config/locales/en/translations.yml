@@ -2,36 +2,82 @@
 en:
   site_name: Copylingual
   landing:
-    title: Copylinugal
-    subtitle: Creative copywriting and translation services
+    title: Copylingual
+    subtitle: Copywriting, translation, and other creative stuff by Amy Ramirez
   copywriting:
     title: Copywriting
     subtitle: |-
       Writing copy requires more than just stringing words together to make them fit.
       It requires thought, insight, and creativity.
-    creative:
-      title: Creative
-      bullet_1: Storyboard creation
-      bullet_2: Infographic concepts and texts
-      bullet_3: Campaign ideas and branding
-    social_media:
-      title: Social Media
-      bullet_1: Strategy and analysis
-      bullet_2: 'Community management '
-      bullet_3: Content
-      bullet_4: Blog posts
-    music: Original compositions for videos, commercials, teasers, and jingles
+  creative:
+    title: Creative
+  storyboard:
+    title: Storyboard creation
+    description: Ideas and script creation for informational videos, tutorials or
+      creative projects.
+    credits_html: 'Client: B2X Customer Solutions<br/>Script: Amy Ramirez<br/>Animation:
+      Martiniano Garcia Cornejo'
+  infographics:
+    title: Infographic concepts and texts
+    description: 'A well-constructed inforgraphic with a creative storyline is a powerful
+      tool for conveying information in a way that is highly sharable. '
+    credits_html: 'Client: Conrad Caine Digital Agency<br/>Copy/Concept: Amy Ramirez<br/>Design:
+      Mariana Pariani, Nicolas Vilar'
+  campaigns:
+    title: Campaign concepts
+    google:
+      description: "Gifts are better when they have a story behind them –the better
+        the story, the more special the gift. Unfortunately, consumers think buying
+        things online is cold and distant. We want to reconcile these two factors
+        in a way that is engaging, incentivizes users to buy products online, and
+        encourages them to share their experience. “Memory Lanes” implements a variety
+        of Google platforms (Google Street view, Google+, Google Maps API, and Hangouts)
+        to personalize the online shopping experience. Consumers can customize Street
+        View in a way that enhances the story behind the gift they give.\nThis was
+        a campaign produced for the 2014 Cannes Young Cyber Lion competition. "
+      credits_html: 'Client: Google<br/>Copy: Amy Ramirez<br/>Design/Video: Tomas
+        Perrin'
+    siemens:
+      description: We wanted to appeal to people that not only find answers to the
+        world's toughest questions, but actively seek them out. People that are driven
+        by curiosity and passion. This employer branding campaign was not used by
+        Siemens.
+      credits_html: 'Client: Siemens<br/>Concept: Amy Ramirez<br/>Design: Rocío Chiesa<br/>Video:
+        Marcos de Lunardo'
+    worldcup:
+      description: Similar to Chat Roulette in that online chatters are paired up
+        randomly and have the option to click out of a conversation with someone,
+        fans with the proper A/V resources are given 10 seconds to tell a person of
+        the opposing team off while they watch the game in real-time.
+      credits_html: 'Concept: Amy Ramirez<br/>Design/Video: Tomas Perrin'
+  social_media:
+    title: Social Media
+  strategy:
+    title: Strategy and analysis
+  community_management:
+    title: 'Community management '
+  content:
+    title: Content
+  blog_posts:
+    title: Blog posts
   translation:
     title: Translation
     quote: '"Translation is the most intimate act of reading." - Gayatri Chakravorty
       Spivak'
     subtitle: Our native familiarity of both English and Spanish background guarantees
       the essence of what you are trying to communicate will not be lost.
-    bullet_1: Scripts
-    bullet_2: Subtitles
-    bullet_3: Presentations
-    bullet_4: Legal documents
-    bullet_5: Corporate communication
-    bullet_6: Proofreading
-    bullet_7: |
+    scripts: Scripts
+    subtitles: Subtitles
+    presentations: Presentations
+    legal_documents: Legal documents
+    corporate_communication: Corporate communication
+    proofreading: Proofreading
+    ? |
+      web_pages
+    : |
       Web pages
+  footer:
+    contact_me_at: Contact me at arami@hotmail.com, guacha!
+  music:
+    title: Music
+    description: Original compositions for videos, commercials, teasers, and jingles

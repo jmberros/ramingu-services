@@ -1,38 +1,83 @@
-<div class='container'>
-  <div class='row'>
+<div class='row'>
 
-    <div class='col-md-12'>
-      <div class='title'>
-        <%= t 'copywriting.title' %>
+  <div class='col-md-12'>
+    <h1><%= t 'copywriting.title' %></h1>
+    <p class='subtitle'>
+      <%= t 'copywriting.subtitle' %>
+    </p>
+  </div><!-- .col-md- -->
+
+  <!-- Creative -->
+  <div class='col-md-12' id='creative'>
+    <h2><%= t 'creative.title' %></h1>
+
+    <div class="panel-group" id="creative-accordion" role="tablist" aria-multiselectable="true">
+      <!-- Storyboard -->
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="storyboard-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#creative-accordion" href="#storyboard-collapse" aria-expanded="false" aria-controls="storyboard-collapse">
+              <%= t 'storyboard.title' %>
+            </a>
+          </h4>
+        </div>
+        <div id="storyboard-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="storyboard-heading">
+          <div class="panel-body">
+            <p><%= t 'storyboard.description' %></p>
+            <iframe width="560" height="315" src="//www.youtube.com/embed/AvRa8oxS4Zw" frameborder="0" allowfullscreen></iframe>
+            <p><%= t 'storyboard.credits_html' %></p>
+          </div>
+        </div>
       </div>
-      <div class='subtitle'>
-        <%= t 'copywriting.subtitle' %>
+
+      <!-- Infographics -->
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="infographics-heading">
+          <h4 class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#creative-accordion" href="#infographics-collapse" aria-expanded="false" aria-controls="infographics-collapse">
+              <%= t 'infographics.title' %>
+            </a>
+          </h4>
+        </div>
+        <div id="infographics-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="infographics-heading">
+          <div class="panel-body">
+            <p><%= t 'infographics.description' %></p>
+            <%= image_tag 'dissectememe.jpg' %>
+            <p><%= t 'infographics.credits_html' %></p>
+          </div>
+        </div>
       </div>
-    </div><!-- .col-md- -->
 
-    <div class='col-md-4 list'>
-      <h1><%= t 'copywriting.creative.title' %></h1>
-      <ul>
-        <li><%= t 'copywriting.creative.bullet_1' %></li>
-        <li><%= t 'copywriting.creative.bullet_2' %></li>
-        <li><%= t 'copywriting.creative.bullet_3' %></li>
-      </ul>
-    </div><!-- .col-md- -->
+      <!-- Campaigns -->
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="campaigns-heading">
+          <h4 class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#creative-accordion" href="#campaigns-collapse" aria-expanded="false" aria-controls="campaigns-collapse">
+              <%= t 'campaigns.title' %>
+            </a>
+          </h4>
+        </div>
+        <div id="campaigns-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="campaigns-heading">
+          <div class="panel-body">
+            <%= t 'campaigns.description' %>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <div class='col-md-4 list'>
-      <h1><%= t 'copywriting.social_media.title' %></h1>
-      <ul>
-        <li><%= t 'copywriting.social_media.bullet_1' %></li>
-        <li><%= t 'copywriting.social_media.bullet_2' %></li>
-        <li><%= t 'copywriting.social_media.bullet_3' %></li>
-        <li><%= t 'copywriting.social_media.bullet_4' %></li>
-      </ul>
-    </div><!-- .col-md- -->
+  </div><!-- .col-md- -->
 
-    <div class='col-md-4 list'>
-      <h1><%= t 'copywriting.music.title' %></h1>
-      <p><%= t 'copywriting.music.description' %></p>
-    </div><!-- .col-md- -->
+  <!-- Social Media -->
+  <div class='col-md-12' id='social-media'>
+    <h2><%= t 'social_media.title' %></h2>
 
-  </div><!-- .row -->
-</div><!-- .container -->
+    <h3><%= t 'strategy.title' %></h3>
+    <div id='' class='collapse'>
+    </div>
+
+    <h3><%= t 'commnity_management.title' %></h3>
+    <h3><%= t 'content.title' %></h3>
+    <h3><%= t 'blog_posts.title' %></h3>
+  </div><!-- .col-md- -->
+
+</div><!-- .row -->

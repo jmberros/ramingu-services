@@ -1,53 +1,30 @@
 $ ->
-  $('#fullpage').fullpage({
-    # Navigation
-    #menu: true,
-    anchors: [], # ['presentation', 'copywriting', 'translation'],
-    navigation: true,
-    navigationPosition: 'right',
-    navigationTooltips: ['presentation', 'copywriting', 'translation'],
-    slidesNavigation: true,
-    slidesNavPosition: 'bottom',
+  #$('body').on({
+    #'mousewheel': (event) ->
+      #unless event.target.id == 'el'
+        #event.preventDefault()
+        #event.stopPropagation()
+  #})
 
-    ## Scrolling
-    css3: true,
-    scrollingspeed: 200,
-    autoscrolling: true,
-    scrollbar: true,
-    easing: 'easeinquart',
-    easingcss3: 'ease',
-    loopbottom: false,
-    looptop: false,
-    loophorizontal: true,
-    continuousvertical: false,
-    #normalscrollelements: '#element1, .element2',
-    scrolloverflow: false,
-    touchsensitivity: 15,
-    normalscrollelementtouchthreshold: 5,
+  $('body').scrollspy({ target: '#sidebar-wrapper' })
 
-    ## Accessibility
-    keyboardScrolling: true,
-    #animateAnchor: true,
+  $('.collapse').collapse()
 
-    ## Design
-    controlArrows: true,
-    verticalCentered: false, #
-    resize : false,
-    #sectionsColor : ['#ccc', '#fff'],
-    paddingTop: '3em',
-    paddingBottom: '10px',
-    fixedElements: '#header, .footer',
-    responsive: 0,
+  $('.sidebar-nav a[href^="#"]').on('click', (event) ->
+    #$('a[href^="#"]').removeClass('active')
+    #$(this).addClass('active')
+    $target = $( $(this).attr('href') )
+    if $target.length
+      event.preventDefault()
+      $('body').animate({
+        scrollTop: $target.offset().top
+      }, 750)
+  )
 
-    ## Custom selectors
-    #sectionSelector: '.section',
-    #slideSelector: '.slide',
+  $('.section a[href^="#"]').on('click', (event) ->
+    #$target = $( $(this).attr('href') )
+    #if $target.length
+      #event.preventDefault()
+      #$target.slideToggle()
+  )
 
-    ## events
-    onLeave: (index, nextIndex, direction) -> {},
-    afterLoad: (anchorLink, index) -> {},
-    afterRender: () -> {},
-    afterResize: () -> {},
-    afterSlideLoad: (anchorLink, index, slideAnchor, slideIndex) -> {},
-    onSlideLeave: (anchorLink, index, slideIndex, direction) -> {}
-  })
