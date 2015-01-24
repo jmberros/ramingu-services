@@ -10,5 +10,9 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery/dist/jquery.min.js
+//= require jquery-ui/jquery-ui.min.js
+//= require bootstrap/dist/js/bootstrap.min.js
+//
 //= require services
 //= require_tree .
