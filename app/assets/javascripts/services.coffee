@@ -1,30 +1,32 @@
 $ ->
-  #$('body').on({
-    #'mousewheel': (event) ->
-      #unless event.target.id == 'el'
-        #event.preventDefault()
-        #event.stopPropagation()
-  #})
+  configureFeatures()
+  animateLandingElements()
 
-  $('body').scrollspy({ target: '#sidebar-wrapper' })
+animateLandingElements = ->
+  #$('#copylingual').find('h1').addClass('zoomInDown animated')
+  #$('#copylingual').find('.subtitle').addClass('flipInY animated')
+  $('nav').addClass('fadeInDown animated')
+  $('#copylingual').find('.fa-arrow-down').addClass('pulse animated infinite')
 
-  $('.collapse').collapse()
+configureFeatures = ->
+  # Spy scroll and activate current section in the topbar
+  $('body').scrollspy target: '.navbar-fixed-top'
 
-  $('.sidebar-nav a[href^="#"]').on('click', (event) ->
-    #$('a[href^="#"]').removeClass('active')
-    #$(this).addClass('active')
-    $target = $( $(this).attr('href') )
-    if $target.length
-      event.preventDefault()
-      $('body').animate({
-        scrollTop: $target.offset().top
-      }, 750)
+  # Smooth scrolling for local links
+  smoothScroll.init(
+    speed: 400
+    easing: 'easeInOutCubic'
+    updateURL: yes
   )
 
-  $('.section a[href^="#"]').on('click', (event) ->
-    #$target = $( $(this).attr('href') )
-    #if $target.length
-      #event.preventDefault()
-      #$target.slideToggle()
-  )
+  # Carousel
+  #$('.slick-carousel').slick
+    #infinite: true
+    #slidesToShow: 3
+    #slidesToScroll: 3
+
+  # Reveal animations as you scroll
+  new WOW({
+    duration: '2.5s'
+  }).init()
 
