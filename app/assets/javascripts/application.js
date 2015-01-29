@@ -15,9 +15,8 @@
 //= require bootstrap/dist/js/bootstrap.min.js
 //= require smooth-scroll/dist/js/smooth-scroll.min.js
 //= require WOW/dist/wow.min.js
-//= require blueimp-gallery/js/blueimp-gallery.min.js
-//= require blueimp-bootstrap-image-gallery/js/bootstrap-image-gallery.min.js
-//= require slick.js/slick/slick.min.js
+//= require magnific-popup/dist/jquery.magnific-popup.min.js
+//= require bpopup/jquery.bpopup.min.js
 //
 //= require services
 //= require_tree .

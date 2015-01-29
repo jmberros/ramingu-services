@@ -1,13 +1,20 @@
 <!-- Storyboard -->
 <h3><%= t 'storyboard.title' %></h3>
+
 <p><%= t 'storyboard.description' %></p>
 
-<a href="<%= image_path 'b2x_features.png' %>" data-gallery>
-  <%= t 'storyboard.b2x_title' %>
-</a>
+<div class='popup-gallery'>
+  <h4><%= t 'storyboard.b2x_title' %></h4>
 
-<div class='mod'>
-  <p><%= t 'storyboard.b2x_title' %></p>
-  <iframe width="560" height="315" src="//www.youtube.com/embed/AvRa8oxS4Zw" frameborder="0" allowfullscreen></iframe>
-  <p><%= t 'storyboard.credits_html' %></p>
-</div><!-- .mod -->
+  <% %w(b2x_features.png b2x_bed.png b2x_recipes.png b2x_glass.png).each do |filename| %>
+    <a href="<%= image_path filename %>">
+      <%= image_tag filename, class: 'thumbnail greyed-out' %>
+    </a> 
+  <% end %>
+
+  <a href="https://www.youtube.com/watch?v=AvRa8oxS4Zw" class='mfp-iframe'>
+    <img class='thumbnail greyed-out' src="https://i.ytimg.com/vi/AvRa8oxS4Zw/mqdefault.jpg">
+  </a> 
+
+  <p class='credits'><%= t 'storyboard.b2x_credits_html' %></p>
+</div>

@@ -16,7 +16,7 @@ body {
   font-family: $sans;
 }
 
-h1, h2, h3, h4, h5, h6, .navbar-brand {
+h1, h2, h3, .navbar-brand {
   font-family: $serif;
 }
 
@@ -25,22 +25,31 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 }
 
 .section-head {
+  height: 300px;
+  margin-right: -15px; // cancel out Bootstrap's .container-fluid padding
+  margin-left: -15px; // cancel out Bootstrap's .container-fluid padding
+
   text-align: center;
 
   h1 {
+    display: inline-block;
+    vertical-align: middle;
     font-size: 60px;
   }
 
   p { 
-    &:before { @include fading-hr; }
-
+    display: inline-block;
+    vertical-align: middle;
     font-size: 19px;
+
+    &:before { @include fading-hr; }
   }
 }
 
 .section {
-  padding: 70px 20px 20px 40px;
-  font-size: 16px;
+  min-height: 100vh;
+  padding: 70px 0px 20px 0px;
+  font-size: 15px;
   color: black;
   .col-md-6 {
     border-radius: 10px;
@@ -49,6 +58,11 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   h3 {
     font-size: 20px;
   }
+  h4 {
+    font-size: 16px;
+    font-weight: bold;
+    font-variant: small-caps;
+  }
 }
 
 .subsection-title {
@@ -56,7 +70,36 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   text-align: center;
 }
 
-.mod {
+.popup-gallery {
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.thumbnail {
+  display: inline-block;
+  margin: 5px;
+  max-width: 320px;
+  max-height: 180px;
+}
+
+.greyed-out {
+  filter: grayscale(0.9);
+
+  &:hover {
+    filter: grayscale(0);
+  }
+}
+
+.credits {
+  font-size: 12px;
+  color: gray;
+  margin: 5px;
+  padding-left: 10px;
+  border-left: 2px solid #EAEAEA;
+}
+
+.hidden {
   display: none;
 }
 
@@ -78,14 +121,13 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     margin: 20px;
     font-size: 75px;
     color: black;
-    &:hover {
-      color: gray;
-    }
   }
 }
 
 #copywriting {
-  background-size: 100vw;
+  .section-head {
+    background: gold;
+  }
 
   img {
     max-width: 100%;
@@ -94,7 +136,15 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 }
 
 #translation {
-  background-size: 100vw;
+  .section-head {
+    background: lightpink;
+  }
+}
+
+#music {
+  .section-head {
+    background: mediumaquamarine;
+  }
 }
 
 #page-content-wrapper {
@@ -120,16 +170,11 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 .flag-icon {
   position: relative;
   display: inline-block;
-  width: 1em;
-  line-height: 1em;
+  width: 160px;
+  line-height: 90px;
   background-size: contain;
   background-position: 50%;
   background-repeat: no-repeat;
-  filter: grayscale(0.7);
-
-  &:hover {
-    filter: grayscale(0);
-  }
 }
 .flag-icon:before {
   content: "\00a0";

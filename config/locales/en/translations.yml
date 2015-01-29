@@ -27,41 +27,56 @@ en:
     disectememe_title: Distectememe
   campaigns:
     title: Campaign concepts
-    google:
-      description: "Gifts are better when they have a story behind them –the better
-        the story, the more special the gift. Unfortunately, consumers think buying
-        things online is cold and distant. We want to reconcile these two factors
-        in a way that is engaging, incentivizes users to buy products online, and
-        encourages them to share their experience. “Memory Lanes” implements a variety
-        of Google platforms (Google Street view, Google+, Google Maps API, and Hangouts)
-        to personalize the online shopping experience. Consumers can customize Street
-        View in a way that enhances the story behind the gift they give.\nThis was
-        a campaign produced for the 2014 Cannes Young Cyber Lion competition. "
-      credits_html: 'Client: Google<br/>Copy: Amy Ramirez<br/>Design/Video: Tomas
-        Perrin'
-    siemens:
-      description: We wanted to appeal to people that not only find answers to the
-        world's toughest questions, but actively seek them out. People that are driven
-        by curiosity and passion. This employer branding campaign was not used by
-        Siemens.
-      credits_html: 'Client: Siemens<br/>Concept: Amy Ramirez<br/>Design: Rocío Chiesa<br/>Video:
-        Marcos de Lunardo'
-    worldcup:
-      description: Similar to Chat Roulette in that online chatters are paired up
-        randomly and have the option to click out of a conversation with someone,
-        fans with the proper A/V resources are given 10 seconds to tell a person of
-        the opposing team off while they watch the game in real-time.
-      credits_html: 'Concept: Amy Ramirez<br/>Design/Video: Tomas Perrin'
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    google_title: Google Young Cyber Lion
+    google_description: "Gifts are better when they have a story behind them –the
+      better the story, the more special the gift. Unfortunately, consumers think
+      buying things online is cold and distant. We want to reconcile these two factors
+      in a way that is engaging, incentivizes users to buy products online, and encourages
+      them to share their experience. “Memory Lanes” implements a variety of Google
+      platforms (Google Street view, Google+, Google Maps API, and Hangouts) to personalize
+      the online shopping experience. Consumers can customize Street View in a way
+      that enhances the story behind the gift they give.\nThis was a campaign produced
+      for the 2014 Cannes Young Cyber Lion competition. "
+    google_credits_html: 'Client: Google<br/>Copy: Amy Ramirez<br/>Design/Video: Tomas
+      Perrin'
+    siemens_title: Siemens Answers Seekers
+    siemens_description: We wanted to appeal to people that not only find answers
+      to the world's toughest questions, but actively seek them out. People that are
+      driven by curiosity and passion. This employer branding campaign was not used
+      by Siemens.
+    siemens_credits_html: 'Client: Siemens<br/>Concept: Amy Ramirez<br/>Design: Rocío
+      Chiesa<br/>Video: Marcos de Lunardo'
+    worldcup_title: WorldCup
+    worldcup_description: Similar to Chat Roulette in that online chatters are paired
+      up randomly and have the option to click out of a conversation with someone,
+      fans with the proper A/V resources are given 10 seconds to tell a person of
+      the opposing team off while they watch the game in real-time.
+    worldcup_credits_html: 'Concept: Amy Ramirez<br/>Design/Video: Tomas Perrin'
   social_media:
     title: Social Media
   strategy:
     title: Strategy and analysis
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   community_management:
     title: 'Community management '
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   content:
     title: Content
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   blog_posts:
     title: Blog posts
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   translation:
     title: Translation
     quote: '"Translation is the most intimate act of reading." - Gayatri Chakravorty

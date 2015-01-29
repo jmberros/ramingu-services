@@ -1,6 +1,6 @@
-<div class='row wow fadeIn'>
+<div class='section-head'>
+  <div class='row wow fadeIn'>
 
-  <div class='section-head'>
     <div class='col-md-12'>
       <h1><%= t 'copywriting.title' %></h1>
     </div>
@@ -8,44 +8,50 @@
     <div class='col-md-8 col-md-offset-2'>
       <p><%= t 'copywriting.subtitle_html' %></p>
     </div>
-  </div><!-- .section-head -->
 
-</div><!-- .row -->
+  </div><!-- .row -->
+</div><!-- .section-head -->
 
-<div class='row'>
+<div class='section-body'>
+  <div class='row'>
 
-  <!-- Creative -->
-  <div class='col-md-6 wow fadeIn'>
-    <div id='creative'>
-      <h2 class='subsection-title'><%= t 'creative.title' %></h2>
+    <!-- Creative -->
+    <div class='col-md-6 wow fadeIn'>
+      <div id='creative'>
+        <h2 class='subsection-title'><%= t 'creative.title' %></h2>
 
-      <%= render partial: 'services/storyboard' %>
+        <%= render partial: 'services/storyboard' %>
 
-      <%= render partial: 'services/infographics' %>
+        <%= render partial: 'services/infographics' %>
 
-      <%= render partial: 'services/campaigns' %>
+        <%= render partial: 'services/campaigns' %>
 
-    </div><!-- #creative -->
-  </div><!-- .col-md-6 -->
+      </div><!-- #creative -->
+    </div><!-- .col-md-6 -->
 
-  <div class='col-md-6 wow fadeIn'>
-    <!-- Social Media -->
-    <div id='social-media'>
-      <h2 class='subsection-title'><%= t 'social_media.title' %></h2>
+    <div class='col-md-6 wow fadeIn'>
+    </div><!-- .col-md-6 -->
+  </div><!-- .row -->
 
-      <h3><%= t 'strategy.title' %></h3>
-      <p><%= t 'strategy.description' %></p>
+  <div class='row'>
+    <div class='col-md-6 wow fadeIn'>
+      <!-- Social Media -->
+      <div id='social-media'>
+        <h2 class='subsection-title'><%= t 'social_media.title' %></h2>
 
-      <h3><%= t 'community_management.title' %></h3>
-      <p><%= t 'community_management.description' %></p>
+        <%= render partial: 'services/strategy' %>
 
-      <h3><%= t 'content.title' %></h3>
-      <p><%= t 'content.description' %></p>
+        <%= render partial: 'services/content' %>
 
-      <h3><%= t 'blog_posts.title' %></h3>
-      <p><%= t 'blog_posts.description' %></p>
+        <%= render partial: 'services/community_management' %>
 
-    </div><!-- #social-media -->
-  </div><!-- .col-md- -->
+        <%= render partial: 'services/blog_posts' %>
 
-</div><!-- .row -->
+      </div><!-- #social-media -->
+    </div><!-- .col-md- -->
+
+    <div class='col-md-6 wow fadeIn'>
+    </div><!-- .col-md-6 -->
+
+  </div><!-- .row -->
+</div><!-- .section-body -->

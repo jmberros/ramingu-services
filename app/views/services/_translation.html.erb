@@ -1,40 +1,42 @@
-<div class='row wow fadeIn'>
+<div class='section-head'>
+  <div class='row wow fadeIn'>
 
-  <div class='section-head'>
     <div class='col-md-12'>
       <h1>
         <%= t 'translation.title' %>
-        <span class="flag-icon flag-icon-us"></span>
-        <span class="flag-icon flag-icon-ar"></span>
       </h1>
     </div>
 
     <div class='col-md-8 col-md-offset-2'>
       <p><%= t 'translation.quote' %></p>
     </div>
-  </div><!-- .section-head -->
+  </div><!-- .row -->
+</div><!-- .section-head -->
 
-</div><!-- .row -->
 
-<div class='row'>
+<div class='section-body'>
+  <div class='row'>
 
-  <div class='col-md-6 wow fadeIn'>
-    <h3><%= t 'translation.subtitle' %></h3>
-    <p><%= t 'translation.bio' %></p>
-    <p><%= t 'translation.description' %></p>
-  </div><!-- .col-md- -->
+    <div class='col-md-6 wow fadeIn'>
+      <h3><%= t 'translation.subtitle' %></h3>
+      <p><%= t 'translation.description' %></p>
 
-  <div class='col-md-6 wow fadeIn'>
-    <h3><%= t 'translation.types_of_documents' %> ಠ_ರೃ</h3>
-    <ul>
-      <li><%= t 'translation.scripts' %></li>
-      <li><%= t 'translation.subtitles' %></li>
-      <li><%= t 'translation.presentations' %></li>
-      <li><%= t 'translation.legal_documents' %></li>
-      <li><%= t 'translation.corporate_communication' %></li>
-      <li><%= t 'translation.proofreading' %></li>
-      <li><%= t 'translation.web_pages' %></li>
-    </ul>
-  </div><!-- .col-md- -->
+      <h4><%= t 'translation.types_of_documents' %> ಠ_ರೃ</h4>
+      <ul>
+        <li><%= t 'translation.scripts' %></li>
+        <li><%= t 'translation.subtitles' %></li>
+        <li><%= t 'translation.presentations' %></li>
+        <li><%= t 'translation.legal_documents' %></li>
+        <li><%= t 'translation.corporate_communication' %></li>
+        <li><%= t 'translation.proofreading' %></li>
+        <li><%= t 'translation.web_pages' %></li>
+      </ul>
+    </div><!-- .col-md- -->
 
-</div><!-- .row -->
+    <div class='col-md-6 wow fadeIn'>
+      <span class="flag-icon flag-icon-us greyed-out"></span>
+      <span class="flag-icon flag-icon-ar greyed-out"></span>
+    </div><!-- .col-md- -->
+
+  </div><!-- .row -->
+</div><!-- .section-body -->

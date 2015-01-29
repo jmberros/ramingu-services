@@ -3,10 +3,15 @@
 <h3><%= t 'infographics.title' %></h3>
 <p><%= t 'infographics.description' %></p>
 
-<div class='mod'>
-  <%= image_tag 'dissectememe.jpg' %>
-  <p><%= t 'infographics.credits_html' %></p>
-</div>
+<div class='popup-gallery'>
+  <h4><%= t 'infographics.disectememe_title' %></h4>
 
-<a href='<%= image_path 'dissectememe.jpg' %>'><%= t '.infographics.disectememe_title' %></a>
+  <a href="<%= image_path 'dissectememe.jpg' %>">
+    <%= image_tag 'dissectememe.jpg', class: 'thumbnail greyed-out' %>
+  </a>
+
+  <p class='credits'>
+    <%= t 'infographics.credits_html' %>
+  </p>
+</div>
 

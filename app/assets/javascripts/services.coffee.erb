@@ -19,11 +19,25 @@ configureFeatures = ->
     updateURL: yes
   )
 
-  # Carousel
-  #$('.slick-carousel').slick
-    #infinite: true
-    #slidesToShow: 3
-    #slidesToScroll: 3
+  # Pop-up modal galleries
+  $('.popup-gallery').each( ->
+    $(this).magnificPopup(
+      delegate: 'a'
+      type: 'image'
+      titleSrc: 'title'
+      midClick: yes
+      gallery: { enabled: yes }
+    )
+  )
+
+  $('#blog_link').click( (e) ->
+    e.preventDefault()
+    $('#blog_modal').bPopup(
+      content: 'iframe'
+      contentContainer: '#page'
+      loadUrl: 'https://filminginargentina.wordpress.com/2011/09/22/why-not-use-the-real-thing-x-men-confusion-on-argentina-location/'
+    )
+  )
 
   # Reveal animations as you scroll
   new WOW({
