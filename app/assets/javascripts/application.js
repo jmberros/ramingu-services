@@ -17,6 +17,8 @@
 //= require WOW/dist/wow.min.js
 //= require magnific-popup/dist/jquery.magnific-popup.min.js
 //= require bpopup/jquery.bpopup.min.js
+//= require stellar/jquery.stellar.min.js
+//= require flickity/dist/flickity.pkgd.min.js
 //
 //= require services
 //= require_tree .

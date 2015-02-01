@@ -1,6 +1,11 @@
-$serif: 'Prata', sans-serif;
-$sans: 'Roboto', serif;
+$serif: 'Prata', serif;
+$sans-serif: 'Roboto', sans-serif;
 $fancy-font: 'Lobster Two', cursive;
+$height: 300px;
+$border: 1px dotted silver;
+$border-radius: 5px;
+$main-width: 1000px;
+$bright-color: gold;
 
 @mixin fading-hr {
   content: "";
@@ -13,31 +18,51 @@ $fancy-font: 'Lobster Two', cursive;
 
 body {
   position: relative;
-  font-family: $sans;
+  font-family: $sans-serif;
 }
 
-h1, h2, h3, .navbar-brand {
+.container-fluid {
+  max-width: $main-width;
+}
+
+h1, h2, .navbar-brand {
   font-family: $serif;
+  border: $border;
 }
 
 .navbar-brand {
   font-weight: bold;
 }
 
+#page-content-wrapper{
+  background: asset-url('unsplash-city.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  .container-fluid {
+    background: white;
+  }
+}
+
 .section-head {
-  height: 300px;
-  margin-right: -15px; // cancel out Bootstrap's .container-fluid padding
-  margin-left: -15px; // cancel out Bootstrap's .container-fluid padding
+  border: $border;
+  height: $height;
+  /*margin-right: -15px; // cancel out Bootstrap's .container-fluid padding*/
+  /*margin-left: -15px; // cancel out Bootstrap's .container-fluid padding*/
+  padding: 40px 0;
+  background: $bright-color;
 
   text-align: center;
 
   h1 {
     display: inline-block;
     vertical-align: middle;
-    font-size: 60px;
+    /*font-size: 60px;*/
+    font-size: 6em;
   }
 
   p { 
+    border: $border;
     display: inline-block;
     vertical-align: middle;
     font-size: 19px;
@@ -46,9 +71,18 @@ h1, h2, h3, .navbar-brand {
   }
 }
 
+.service {
+  border: $border;
+  min-height: $height;
+  margin: 0;
+  padding: 40px;
+}
+
 .section {
+  border: $border;
   min-height: 100vh;
   padding: 70px 0px 20px 0px;
+  margin: 0 -15px;
   font-size: 15px;
   color: black;
   .col-md-6 {
@@ -56,7 +90,10 @@ h1, h2, h3, .navbar-brand {
   }
 
   h3 {
-    font-size: 20px;
+    border: $border;
+    margin-top: 0;
+    font-family: $sans-serif;
+    font-size: 30px;
   }
   h4 {
     font-size: 16px;
@@ -66,21 +103,34 @@ h1, h2, h3, .navbar-brand {
 }
 
 .subsection-title {
-  /*margin: 10px 0 5px 0;*/
+  border: $border;
+  /*margin: 0 -15px;*/
+  margin: 0;
+  padding: 15px 0;
+  background: lighten($bright-color, 40%);
   text-align: center;
 }
 
 .popup-gallery {
-  a:hover {
-    text-decoration: none;
+  border: $border;
+  text-align: center;
+
+  a:not(:first-child) {}
+  a {
+    &:not(:first-of-type) {
+      display: none;
+    }
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
 .thumbnail {
   display: inline-block;
-  margin: 5px;
-  max-width: 320px;
-  max-height: 180px;
+  margin: 0;
+  max-width: 100%; // 480px;
+  max-height: 100%; // 270px;
 }
 
 .greyed-out {
@@ -91,7 +141,12 @@ h1, h2, h3, .navbar-brand {
   }
 }
 
+.big-modal {
+  height: 90vh;
+}
+
 .credits {
+  border: $border;
   font-size: 12px;
   color: gray;
   margin: 5px;
@@ -101,6 +156,11 @@ h1, h2, h3, .navbar-brand {
 
 .hidden {
   display: none;
+}
+
+.mfp-iframe {
+  border: 2px solid silver;
+  border-radius: $border-radius;
 }
 
 #copylingual {
@@ -125,26 +185,12 @@ h1, h2, h3, .navbar-brand {
 }
 
 #copywriting {
-  .section-head {
-    background: gold;
-  }
-
-  img {
-    max-width: 100%;
-    margin: 5px;
-  }
 }
 
 #translation {
-  .section-head {
-    background: lightpink;
-  }
 }
 
 #music {
-  .section-head {
-    background: mediumaquamarine;
-  }
 }
 
 #page-content-wrapper {

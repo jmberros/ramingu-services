@@ -9,16 +9,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id='wrapper'>
 
-    <%= render partial: 'shared/topbar' %>
+  <%= render partial: 'shared/topbar' %>
 
-    <%= yield %>
-
-  </div><!-- #wrapper -->
+  <%= yield %>
 
   <%= yield :body %>
   <div id='bottom-fade'></div>
+
   <%= javascript_include_tag 'application' %>
 </body>
 </html>

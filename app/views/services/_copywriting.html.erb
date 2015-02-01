@@ -3,9 +3,6 @@
 
     <div class='col-md-12'>
       <h1><%= t 'copywriting.title' %></h1>
-    </div>
-
-    <div class='col-md-8 col-md-offset-2'>
       <p><%= t 'copywriting.subtitle_html' %></p>
     </div>
 
@@ -13,45 +10,25 @@
 </div><!-- .section-head -->
 
 <div class='section-body'>
-  <div class='row'>
+  <div id='creative'>
+    <h2 class='subsection-title'><%= t 'creative.title' %></h2>
 
-    <!-- Creative -->
-    <div class='col-md-6 wow fadeIn'>
-      <div id='creative'>
-        <h2 class='subsection-title'><%= t 'creative.title' %></h2>
+    <%= render partial: 'services/storyboard' %>
 
-        <%= render partial: 'services/storyboard' %>
+    <%= render partial: 'services/infographics' %>
 
-        <%= render partial: 'services/infographics' %>
+    <%= render partial: 'services/campaigns' %>
+  </div>
 
-        <%= render partial: 'services/campaigns' %>
+  <div id='social-media'>
+    <h2 class='subsection-title'><%= t 'social_media.title' %></h2>
 
-      </div><!-- #creative -->
-    </div><!-- .col-md-6 -->
+    <%= render partial: 'services/strategy' %>
 
-    <div class='col-md-6 wow fadeIn'>
-    </div><!-- .col-md-6 -->
-  </div><!-- .row -->
+    <%= render partial: 'services/content' %>
 
-  <div class='row'>
-    <div class='col-md-6 wow fadeIn'>
-      <!-- Social Media -->
-      <div id='social-media'>
-        <h2 class='subsection-title'><%= t 'social_media.title' %></h2>
+    <%= render partial: 'services/community_management' %>
 
-        <%= render partial: 'services/strategy' %>
-
-        <%= render partial: 'services/content' %>
-
-        <%= render partial: 'services/community_management' %>
-
-        <%= render partial: 'services/blog_posts' %>
-
-      </div><!-- #social-media -->
-    </div><!-- .col-md- -->
-
-    <div class='col-md-6 wow fadeIn'>
-    </div><!-- .col-md-6 -->
-
-  </div><!-- .row -->
+    <%= render partial: 'services/blog_posts' %>
+  </div>
 </div><!-- .section-body -->

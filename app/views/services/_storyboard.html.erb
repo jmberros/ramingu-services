@@ -1,20 +1,29 @@
 <!-- Storyboard -->
-<h3><%= t 'storyboard.title' %></h3>
+<div class='row service'>
 
-<p><%= t 'storyboard.description' %></p>
+  <div class='col-md-6 col-sm-12'>
+    <h3><%= t 'storyboard.title' %></h3>
+    <p><%= t 'storyboard.description' %></p>
 
-<div class='popup-gallery'>
-  <h4><%= t 'storyboard.b2x_title' %></h4>
+    <h4><%= t 'storyboard.b2x_title' %></h4>
+    <p class='credits'>
+      <%= t 'storyboard.b2x_credits_html' %>
+    </p>
+  </div>
 
-  <% %w(b2x_features.png b2x_bed.png b2x_recipes.png b2x_glass.png).each do |filename| %>
-    <a href="<%= image_path filename %>">
-      <%= image_tag filename, class: 'thumbnail greyed-out' %>
-    </a> 
-  <% end %>
+  <div class='col-md-6 col-sm-12'>
+    <div class='popup-gallery'>
+      <% %w(b2x_features.png b2x_bed.png b2x_recipes.png b2x_glass.png).each do |filename| %>
+        <a href="<%= image_path filename %>">
+          <%= image_tag filename, class: 'thumbnail greyed-out' %>
+        </a> 
+      <% end %>
 
-  <a href="https://www.youtube.com/watch?v=AvRa8oxS4Zw" class='mfp-iframe'>
-    <img class='thumbnail greyed-out' src="https://i.ytimg.com/vi/AvRa8oxS4Zw/mqdefault.jpg">
-  </a> 
+      <a href="https://www.youtube.com/watch?v=AvRa8oxS4Zw" class='mfp-iframe'>
+        <img class='thumbnail greyed-out' src="https://i.ytimg.com/vi/AvRa8oxS4Zw/mqdefault.jpg">
+      </a> 
+    </div>
 
-  <p class='credits'><%= t 'storyboard.b2x_credits_html' %></p>
+  </div>
+
 </div>

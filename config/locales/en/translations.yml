@@ -3,7 +3,7 @@ en:
   site_name: Copylingual
   landing:
     title: Copylingual
-    subtitle: Copywriting, translation, and other creative stuff by Amy Ramirez
+    subtitle: Copywriting, translation, and other creative stuff by
   copywriting:
     title: Copywriting
     subtitle_html: Writing copy requires more than just stringing words together to
@@ -14,10 +14,10 @@ en:
     title: Storyboard creation
     description: We develop the ideas and create the script for informational videos,
       tutorials or creative projects. From a concept to a story.
-    b2x_link: Example.
     b2x_title: B2X Smartcare Solutions
     b2x_credits_html: 'Client: B2X Customer Solutions<br/>Script: Amy Ramirez<br/>Animation:
       Martiniano Garcia Cornejo'
+  example: 'Example:'
   infographics:
     title: Infographic concepts and texts
     description: 'A well-constructed inforgraphic with a creative storyline is a powerful
@@ -68,7 +68,7 @@ en:
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   content:
-    title: Content
+    title: Content · Native Advertisement
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

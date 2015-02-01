@@ -5,10 +5,15 @@ $ ->
 animateLandingElements = ->
   #$('#copylingual').find('h1').addClass('zoomInDown animated')
   #$('#copylingual').find('.subtitle').addClass('flipInY animated')
-  $('nav').addClass('fadeInDown animated')
+  #$('nav').addClass('fadeInDown animated')
   $('#copylingual').find('.fa-arrow-down').addClass('pulse animated infinite')
 
 configureFeatures = ->
+
+  $('.navbar').css(top: -51) # Hide Navbar by default
+  mainNav()
+  $(window).scroll mainNav
+
   # Spy scroll and activate current section in the topbar
   $('body').scrollspy target: '.navbar-fixed-top'
 
@@ -30,17 +35,22 @@ configureFeatures = ->
     )
   )
 
-  #$('#blog_link').click( (e) ->
-  #  e.preventDefault()
-  #  $('#blog_modal').bPopup(
-  #    content: 'iframe'
-  #    contentContainer: '#page'
-  #    loadUrl: 'https://filminginargentina.wordpress.com/2011/09/22/why-not-use-the-real-thing-x-men-confusion-on-argentina-location/'
-  #  )
-  #)
+  # Ajax-popup of blog links
+  $('.blog-link').magnificPopup(
+    type: 'iframe'
+    callbacks:
+      open: (item) ->
+        $('.mfp-content').addClass('big-modal')
+  )
 
   # Reveal animations as you scroll
-  new WOW({
+  new WOW(
     duration: '2.5s'
-  }).init()
+  ).init()
+
+# Navbar visible on scroll
+mainNav = ->
+  $navbar = $('.navbar')
+  top = if $(window).scrollTop() > 100 then 0 else -51
+  $navbar.stop().animate(top: top)
 

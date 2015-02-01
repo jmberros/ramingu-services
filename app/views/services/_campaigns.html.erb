@@ -1,16 +1,23 @@
 <!-- Campaigns -->
-<h3><%= t 'campaigns.title' %></h3>
+<div class='row service'>
 
-<p><%= t 'campaigns.description' %></p>
+  <div class='col-md-6 col-sm-12'>
+    <h3><%= t 'campaigns.title' %></h3>
+    <p><%= t 'campaigns.description' %></p>
 
-<div class='popup-gallery'>
-  <h4><%= t 'campaigns.siemens_title' %></h4>
+    <h4><%= t 'campaigns.siemens_title' %></h4>
+    <p class='credits'>
+      <%= t 'campaigns.siemens_credits_html' %>
+    </p>
+  </div>
 
-  <% %w(answers_1_hangar.png answers_2_sea.png answers_3_pipes.png answers_4_sky.png).each do |filename| %>
-    <a href="<%= image_path filename %>">
-      <%= image_tag filename, class: 'thumbnail greyed-out' %>
-    </a> 
-  <% end %>
-
-  <p class='credits'><%= t 'campaigns.siemens_credits_html' %></p>
+  <div class='col-md-6 col-sm-12'>
+    <div class='popup-gallery'>
+      <% %w(answers_1_hangar.png answers_2_sea.png answers_3_pipes.png answers_4_sky.png).each do |filename| %>
+        <a href="<%= image_path filename %>">
+          <%= image_tag filename, class: 'thumbnail greyed-out' %>
+        </a> 
+      <% end %>
+    </div>
+  </div>
 </div>
