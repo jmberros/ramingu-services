@@ -4,6 +4,7 @@ en:
   landing:
     title: Copylingual
     subtitle: Copywriting, translation, and other creative stuff by
+    bio_tooltip: whodat?
   copywriting:
     title: Copywriting
     subtitle_html: Writing copy requires more than just stringing words together to
@@ -15,14 +16,14 @@ en:
     description: We develop the ideas and create the script for informational videos,
       tutorials or creative projects. From a concept to a story.
     b2x_title: B2X Smartcare Solutions
-    b2x_credits_html: 'Client: B2X Customer Solutions<br/>Script: Amy Ramirez<br/>Animation:
+    b2x_credits_html: 'Client: B2X Customer Solutions<br/>Script: Amy Ramírez<br/>Animation:
       Martiniano Garcia Cornejo'
   example: 'Example:'
   infographics:
     title: Infographic concepts and texts
     description: 'A well-constructed inforgraphic with a creative storyline is a powerful
       tool for conveying information in a way that is highly sharable. '
-    credits_html: 'Client: Conrad Caine Digital Agency<br/>Copy/Concept: Amy Ramirez<br/>Design:
+    credits_html: 'Client: Conrad Caine Digital Agency<br/>Copy/Concept: Amy Ramírez<br/>Design:
       Mariana Pariani, Nicolas Vilar'
     disectememe_title: Distectememe
   campaigns:
@@ -40,21 +41,21 @@ en:
       the online shopping experience. Consumers can customize Street View in a way
       that enhances the story behind the gift they give.\nThis was a campaign produced
       for the 2014 Cannes Young Cyber Lion competition. "
-    google_credits_html: 'Client: Google<br/>Copy: Amy Ramirez<br/>Design/Video: Tomas
+    google_credits_html: 'Client: Google<br/>Copy: Amy Ramírez<br/>Design/Video: Tomas
       Perrin'
     siemens_title: Siemens Answers Seekers
     siemens_description: We wanted to appeal to people that not only find answers
       to the world's toughest questions, but actively seek them out. People that are
       driven by curiosity and passion. This employer branding campaign was not used
       by Siemens.
-    siemens_credits_html: 'Client: Siemens<br/>Concept: Amy Ramirez<br/>Design: Rocío
+    siemens_credits_html: 'Client: Siemens<br/>Concept: Amy Ramírez<br/>Design: Rocío
       Chiesa<br/>Video: Marcos de Lunardo'
     worldcup_title: WorldCup
     worldcup_description: Similar to Chat Roulette in that online chatters are paired
       up randomly and have the option to click out of a conversation with someone,
       fans with the proper A/V resources are given 10 seconds to tell a person of
       the opposing team off while they watch the game in real-time.
-    worldcup_credits_html: 'Concept: Amy Ramirez<br/>Design/Video: Tomas Perrin'
+    worldcup_credits_html: 'Concept: Amy Ramírez<br/>Design/Video: Tomas Perrin'
   social_media:
     title: Social Media
   strategy:
@@ -81,16 +82,17 @@ en:
     title: Translation
     quote: '"Translation is the most intimate act of reading." - Gayatri Chakravorty
       Spivak'
-    subtitle: Translations from Spanish to English or viceversa
-    bio: 'I am a New Jerseyan born of a Colombian mum and a Cuban dad. I have spoken
-      both English and Spanish my whole life. On top of that, I have lived in Argentina
-      for three years. I have a bachelor in Comparative Literature and I write with
-      gusto. You can say language is my bitch, motherfucker. So you can''t go wrong
-      with our translation service: blazingly fast, ninja-precise, and faithful to
-      the concept of the text.'
-    description: Our native familiarity of both English and Spanish background guarantees
-      the essence of what you are trying to communicate will not be lost.
-    types_of_documents: Types of documents we translate
+    subtitle: Translations
+    english_to_spanish: English to Spanish
+    spanish_to_english: Del castellano al inglés
+    description_english: 'Our native familiarity of both English and Spanish background
+      guarantees the essence of what you are trying to communicate will not be lost.
+      You basically can''t go wrong with our translation service: blazingly fast,
+      ninja-precise, and faithful to the concept of the text.'
+    description_spanish: Conocemos las sutilezas, delicias y pormenores tanto del
+      castellano como del inglés. Nuestra formación en ambas lenguas es garantía de
+      una traducción rápida, precisa y fiel al espíritu del texto.
+    types_of_documents: Types of documents
     scripts: Scripts
     subtitles: Subtitles
     presentations: Presentations
@@ -106,3 +108,35 @@ en:
   music:
     title: Music
     description: Original compositions for videos, commercials, teasers, and jingles
+  topbar:
+    bio: About Me
+    contact: Contact
+    social: Social Media
+  bio:
+    close: ok, I think she is awesome
+    story_html: "<p>Rumour has it that Amy is this intense New Jerseyan young woman,
+      daughter of a Colombian mum and a Cuban dad. She has spoken both English and
+      Spanish her whole life.</p><p>She went to college at the University of Miami,
+      where she obtained a degree in Comparative Literature. After graduating, so
+      is the legend, she moved to Argentina.</p><p>She has been living in Buenos Aires
+      for three years and a half now, and she works as a copywriter in a German ad
+      agency.</p><p>A fierce feminist, she reportedly digs books, music, writing,
+      pop culture, and the Interwebz. You could say she writes with <em>gusto</em>.</p>"
+    who_is: Who in the seven hells is
+  contact_form:
+    title: Drop us a line!
+    name: Your name
+    name_placeholder: Mr. Ozymandias, king of kings
+    email: Your e-mail
+    email_placeholder: egypt4evah@hotmail.com
+    message: Message
+    message_placeholder: Tell us what you are interested in.
+    contact_reason: Contact Reason
+    contact_reason_placeholder: Pick one
+    translation: Translation Services
+    copywriting: Copywriting Services
+    other: Other reason
+    send: Send
+    thanks: Thanks, %{name}! We will get in touch with you soon.
+    write_me_at: You can write directly at
+    or_use_this_form: 'Or use the following form and we''ll read your message:'

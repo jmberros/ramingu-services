@@ -13,9 +13,9 @@
 
   <div class='col-md-6 col-sm-12'>
     <div class='popup-gallery'>
-      <% %w(b2x_features.png b2x_bed.png b2x_recipes.png b2x_glass.png).each do |filename| %>
-        <a href="<%= image_path filename %>">
-          <%= image_tag filename, class: 'thumbnail greyed-out' %>
+      <% %w(b2x_features b2x_bed b2x_recipes b2x_glass).each do |filename| %>
+        <a href="<%= image_path "#{filename}.png" %>">
+          <%= image_tag "#{filename}-thumbnail.png", class: 'thumbnail greyed-out' %>
         </a> 
       <% end %>
 

@@ -1,11 +1,7 @@
 Rails.application.routes.draw do
   root 'services#index'
 
-  get 'services/index'
-
-  get 'services/translations'
-
-  get 'services/creative'
+  post 'contact' => 'services#contact', as: 'contact'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

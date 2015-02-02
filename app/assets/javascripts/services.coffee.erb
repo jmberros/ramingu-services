@@ -1,0 +1,129 @@
+$ ->
+  animateAllTheThings()
+  configureFeatures()
+  configurePopups()
+  lazyLoadImages()
+  setupAJAXForm()
+
+  # Tooltips!
+  $('[data-toggle="tooltip"]').tooltip()
+
+  # Mail
+  $('#mail').text('copy' + 'lingual' + '@' + 'gmai' + 'l.co' + 'm')
+
+animateAllTheThings = ->
+  $('#copylingual').find('.fa-arrow-down').addClass('pulse animated infinite')
+  # Reveal animations as you scroll
+  <%#$('.service img').each ->%>
+    <%#$(this)%>
+      <%#.addClass('wow fadeIn')%>
+      <%#.attr('data-wow-duration', '1.5s')%>
+
+  new WOW().init()
+
+lazyLoadImages = ->
+  $('#page-content-wrapper').css(
+    'background',
+    'url(<%= asset_path("unsplash-city.jpg") %>) no-repeat fixed'
+  )
+  $('.lazy-load').each ->
+    src = this.getAttribute('data-src')
+    $(this).hide().attr('src', src).fadeIn(1000)
+
+configureFeatures = ->
+  #mainNav()
+  #$(window).on('scroll', mainNav)
+
+  # Spy scroll and activate current section in the topbar
+  $('body').scrollspy target: '.navbar-fixed-top'
+
+  # Smooth scrolling for local links
+  #smoothScroll.init(
+    #offset: 50 # Height of the topbar
+    #speed: 400
+    #easing: 'easeInOutCubic'
+    #updateURL: yes
+  #)
+
+configurePopups = ->
+  # Pop-up modal galleries
+  $('.popup-gallery').each( ->
+    $(this).magnificPopup(
+      preloader: yes
+      delegate: 'a'
+      type: 'image'
+      titleSrc: 'title'
+      midClick: yes
+      gallery: { enabled: yes }
+    )
+  )
+
+  # Ajax-popup of blog links
+  $('.blog-link').magnificPopup(
+    type: 'iframe'
+    callbacks:
+      open: (item) ->
+        $('.mfp-content').addClass('big-modal')
+  )
+
+setupAJAXForm = ->
+  $( '#contact-form' ).on('click', 'button', (event) ->
+    event.preventDefault()
+    $form = $(this).closest( 'form' )
+    $alert = $form.siblings( '.alert' )
+    $alert.removeClass( 'shake bounce animated' )
+
+    contact_data =
+      name: $form.find( '#name' ).val()
+      email: $form.find( '#email' ).val()
+      reason: $form.find( '#contact_reason:selected' ).val()
+      message: $form.find( '#message' ).val()
+      authenticity_token: $form.find( '[name=authenticity_token]' ).val()
+
+    $form.find( 'button' )
+      .attr( 'disabled', true )
+      .addClass( 'flash animated infinite' )
+
+    $.post( $form.attr( 'action' ), contact_data )
+      .done( ( response ) ->
+        $alert.removeClass( 'alert-danger' )
+          .addClass( 'alert-success' )
+          .text( "Message Sent!" )
+
+        if $alert.is( ':visible' )
+          $alert.addClass('bounce animated')
+        else
+          $alert.slideDown( 250 )
+
+        $alert.delay( 2500 ).slideUp( 250 )
+      )
+      .fail( (jqXHR, status, error) ->
+        $alert.removeClass( 'alert-success' ).addClass( 'alert-danger' )
+
+        if $form.find( '#name' ).val().length && $form.find('#email').val().length
+          $alert.text( "Oops, something went wrong. You can still write me at copylingual@gmail.com" )
+        else
+          $alert.text( "Please write your name and e-mail." )
+
+        if $alert.is( ':visible' )
+          $alert.addClass( 'shake animated' )
+        else
+          $alert.slideDown( 250 )
+      )
+      .always( ->
+        $form.find( 'button' )
+          .attr( 'disabled', false )
+          .removeClass( 'flash animated infinite' )
+      )
+  )
+
+
+# Navbar hidden on arrival, but permanently visible after scroll
+#mainNav = ->
+#  $navbar = $('.navbar')
+#  if $(window).scrollTop() > 100
+#    $navbar.stop().animate(top: 0)
+#    $(window).off('scroll')
+#  else
+#    $navbar.stop().css(top: -51)
+

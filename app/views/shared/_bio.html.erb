@@ -1,0 +1,33 @@
+<!-- Modal #bio -->
+<div class="modal fade" id="bio" tabindex="-1" role="dialog" aria-labelledby="bioModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+        <h3 class="modal-title" id="bioModal">
+          <%= t 'bio.who_is' %> <span id='amy'>Amy Ramírez</span>™?
+        </h3>
+      </div>
+
+      <div class="modal-body">
+        <div class='row'>
+          <div class='col-md-6 col-xs-12'>
+            <div class='story'>
+              <%= t 'bio.story_html' %>
+            </div>
+          </div>
+          <div class='col-md-6 col-xs-12'>
+            <div class='portrait'>
+              <img data-src=<%= asset_path 'the-real-amy.jpg' %> class='lazy-load greyed-out'>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"><%= t 'bio.close' %> <i class="fa fa-hand-o-right"></i></button>
+      </div>
+    </div>
+  </div>
+</div>

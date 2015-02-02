@@ -18,3 +18,4 @@
 
 # Ignore bower destination folder
 vendor/assets/components
+config/mail.yml config/mail.yml

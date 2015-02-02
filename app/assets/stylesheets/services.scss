@@ -6,6 +6,7 @@ $border: 1px dotted silver;
 $border-radius: 5px;
 $main-width: 1000px;
 $bright-color: gold;
+$text-color: #333;
 
 @mixin fading-hr {
   content: "";
@@ -25,27 +26,38 @@ body {
   max-width: $main-width;
 }
 
+.navbar-nav {
+  i {
+    margin-right: 5px;
+  }
+}
+
 h1, h2, .navbar-brand {
   font-family: $serif;
-  border: $border;
+}
+
+.dropdown-menu {
+  min-width: initial;
 }
 
 .navbar-brand {
   font-weight: bold;
 }
 
-#page-content-wrapper{
-  background: asset-url('unsplash-city.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+
+  /*background-color: gold;*/
+  /*background-blend-mode: multiply;*/
 
   .container-fluid {
     background: white;
+    /*box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.75);*/
   }
 }
 
 .section-head {
-  border: $border;
   height: $height;
   /*margin-right: -15px; // cancel out Bootstrap's .container-fluid padding*/
   /*margin-left: -15px; // cancel out Bootstrap's .container-fluid padding*/
@@ -62,7 +74,6 @@ h1, h2, .navbar-brand {
   }
 
   p { 
-    border: $border;
     display: inline-block;
     vertical-align: middle;
     font-size: 19px;
@@ -72,16 +83,18 @@ h1, h2, .navbar-brand {
 }
 
 .service {
-  border: $border;
   min-height: $height;
   margin: 0;
   padding: 40px;
+
+  &:nth-of-type(even) {
+    background: #EEE;
+  }
 }
 
 .section {
-  border: $border;
   min-height: 100vh;
-  padding: 70px 0px 20px 0px;
+  /*padding: 70px 0px 20px 0px;*/
   margin: 0 -15px;
   font-size: 15px;
   color: black;
@@ -90,7 +103,6 @@ h1, h2, .navbar-brand {
   }
 
   h3 {
-    border: $border;
     margin-top: 0;
     font-family: $sans-serif;
     font-size: 30px;
@@ -103,7 +115,6 @@ h1, h2, .navbar-brand {
 }
 
 .subsection-title {
-  border: $border;
   /*margin: 0 -15px;*/
   margin: 0;
   padding: 15px 0;
@@ -111,8 +122,35 @@ h1, h2, .navbar-brand {
   text-align: center;
 }
 
+.footer {
+  margin: 0 -15px;
+  padding-bottom: 80px;
+  background: #222;
+  color: lighten($bright-color, 40%);
+
+  h1, i {
+    color: $bright-color;
+  }
+  
+  i, button {
+    float: right;
+  }
+
+  button {
+    background-color: $bright-color;
+    color: #222;
+    font-weight: bold;
+    &:hover {
+      background-color: lighten($bright-color, 40%);
+    }
+  }
+
+  #mail {
+    font-family: monospace;
+  }
+}
+
 .popup-gallery {
-  border: $border;
   text-align: center;
 
   a:not(:first-child) {}
@@ -129,8 +167,8 @@ h1, h2, .navbar-brand {
 .thumbnail {
   display: inline-block;
   margin: 0;
-  max-width: 100%; // 480px;
-  max-height: 100%; // 270px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .greyed-out {
@@ -145,8 +183,44 @@ h1, h2, .navbar-brand {
   height: 90vh;
 }
 
+#bio {
+  #amy { font-family: $fancy-font; }
+
+  .modal-dialog {
+    width: 700px;
+  }
+
+  .modal-header {
+    border-radius: $border-radius $border-radius 0 0;
+    background: $bright-color;
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .portrait, .story {
+      flex: 1;
+      padding: 25px;
+    }
+
+    .story {
+      text-align: justify;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: $border-radius;
+    }
+  }
+}
+
+button:hover {
+  background-color: gold;
+}
+
 .credits {
-  border: $border;
   font-size: 12px;
   color: gray;
   margin: 5px;
@@ -163,6 +237,10 @@ h1, h2, .navbar-brand {
   border-radius: $border-radius;
 }
 
+img.mfp-img { // Specificity war against the plugin #shame
+  max-width: 90%;
+}
+
 #copylingual {
   height: 100vh;
   background-size: 100vw;
@@ -177,7 +255,16 @@ h1, h2, .navbar-brand {
     font-style: italic;
     font-size: 25px;
   }
-  i {
+  a {
+    &:hover, &:link, &:visited, &:active {
+      text-decoration: none;
+    }
+  }
+  a[href='#bio'] {
+    color: inherit;
+    border-bottom: 1px dashed gray;
+  }
+  a[href='#copywriting'] {
     margin: 20px;
     font-size: 75px;
     color: black;
@@ -193,11 +280,6 @@ h1, h2, .navbar-brand {
 #music {
 }
 
-#page-content-wrapper {
-  width: 100%;
-  position: absolute;
-}
-
 #bottom-fade {
   width: 100%;
   height: 125px;
@@ -211,12 +293,31 @@ h1, h2, .navbar-brand {
   color: tomato;
 }
 
+.alert {
+  display: none;
+  font-weight: bold;
+}
+
 // Flags! From https://github.com/lipis/flag-icon-css
 
+.flags {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px 0;
+  text-align: center;
+
+  i {
+    font-size: 100px;
+    color: #CCC;
+  }
+}
+
 .flag-icon {
+  flex: 1;
   position: relative;
   display: inline-block;
-  width: 160px;
+  width: 120px;
   line-height: 90px;
   background-size: contain;
   background-position: 50%;

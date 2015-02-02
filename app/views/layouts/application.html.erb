@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>RaminguServices</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= stylesheet_link_tag    'http://fonts.googleapis.com/css?family=Roboto:300|Prata|Lobster+Two', media: 'all' %>
+  <head>
+    <title><%= t 'site_name' %></title>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= stylesheet_link_tag    'http://fonts.googleapis.com/css?family=Roboto:300|Prata|Lobster+Two', media: 'all' %>
+    <%= favicon_link_tag 'c.ico' %>
+    <%= favicon_link_tag 'c.png', rel: 'apple-touch-icon', type: 'image/png' %>
 
-  <%= javascript_include_tag '//ajax.googleapis.com/ajax/libs/webfont/1.5.6/webfont.js' %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+    <%= javascript_include_tag '//ajax.googleapis.com/ajax/libs/webfont/1.5.6/webfont.js' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
 
-  <%= render partial: 'shared/topbar' %>
+    <%= render partial: 'shared/topbar' %>
 
-  <%= yield %>
+    <%= yield %>
 
-  <%= yield :body %>
-  <div id='bottom-fade'></div>
+    <%= yield :body %>
+    <!-- <div id='bottom-fade'></div> -->
 
-  <%= javascript_include_tag 'application' %>
-</body>
+    <%= javascript_include_tag 'application' %>
+  </body>
 </html>

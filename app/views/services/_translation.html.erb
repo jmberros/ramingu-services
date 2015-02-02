@@ -1,13 +1,13 @@
 <div class='section-head'>
-  <div class='row wow fadeIn'>
+  <div class='row'>
 
-    <div class='col-md-12'>
+    <div class='col-md-12 col-xs-12'>
       <h1>
         <%= t 'translation.title' %>
       </h1>
     </div>
 
-    <div class='col-md-8 col-md-offset-2'>
+    <div class='col-md-8 col-md-offset-2 col-xs-12'>
       <p><%= t 'translation.quote' %></p>
     </div>
   </div>
@@ -17,15 +17,22 @@
 <div class='section-body'>
   <div class='row service'>
 
-    <div class='col-md-6 wow fadeIn'>
-      <h3><%= t 'translation.subtitle' %></h3>
-      <p><%= t 'translation.description' %></p>
+    <div class='col-md-6 col-xs-12'>
+      <h3><%= t 'translation.english_to_spanish' %></h3>
+      <p><%= t 'translation.description_english' %></p>
 
-      <span class="flag-icon flag-icon-us greyed-out"></span>
-      <span class="flag-icon flag-icon-ar greyed-out"></span>
+      <h3><%= t 'translation.spanish_to_english' %></h3>
+      <p><%= t 'translation.description_spanish' %></p>
+
+      <div class='flags' style="display:none">
+        <span class="flag-icon flag-icon-us greyed-out"></span>
+        <i class="fa fa-arrows-h hvr-wobble-horizontal"></i>
+        <span class="flag-icon flag-icon-ar greyed-out"></span>
+      </div>
     </div>
 
-    <div class='col-md-6 wow fadeIn'>
+    <div class='col-md-6 col-xs-12'>
+      <h4><%= t 'translation.types_of_documents' %></h4>
       <ul>
         <li><%= t 'translation.scripts' %></li>
         <li><%= t 'translation.subtitles' %></li>

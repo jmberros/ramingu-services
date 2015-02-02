@@ -26,39 +26,54 @@
               <%= t 'translation.title' %>
             </a>
           </li>
-          <li>
-            <a data-scroll href='#music' class='hvr-underline-from-left'>
-              <%= t 'music.title' %>
-            </a>
-          </li>
         </li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
         <li class='hvr-underline-from-left'>
-          <a href='https://twitter.com/acrynomi' target='_blank' title='I can haz tweet?'>
-            <i class="fa fa-twitter"></i>
+          <a href='#bio' target='_blank' data-toggle="modal" data-target="#bio">
+            <i class="fa fa-heart"></i>
+            <%= t 'topbar.bio' %>
           </a>
         </li>
         <li class='hvr-underline-from-left'>
-          <a href='https://www.facebook.com/amycr3' target='_blank' title='No nudes'>
-            <i class="fa fa-facebook"></i>
+          <a data-scroll href='#contact'>
+            <i class="fa fa-envelope"></i>
+            <%= t 'topbar.contact' %>
           </a>
         </li>
-        <li class='hvr-underline-from-left'>
-          <a href='https://plus.google.com/u/0/104403954448451052157/posts' target='_blank' title='aka tumbleweed.org'>
-            <i class="fa fa-google-plus"></i>
+
+        <li class='dropdown'>
+          <a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-expanded='false'>
+            <%= t 'topbar.social' %> <span class='caret'></span>
           </a>
-        </li>
-        <li class='hvr-underline-from-left'>
-          <a href='https://www.youtube.com/channel/UC9mAHkytd0l2dXELBJyC0Nw/videos' target='_blank' title='Chocolate raaaaain'>
-            <i class="fa fa-youtube"></i>
-          </a>
-        </li>
-        <li class='hvr-underline-from-left'>
-          <a href='https://www.pinterest.com' target='_blank' title='wow so chic'>
-            <i class="fa fa-pinterest"></i>
-          </a>
+          <ul class='dropdown-menu' role='menu'>
+            <li>
+              <a href='https://twitter.com/acrynomi' target='_blank' title='I can haz tweet?'>
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href='https://www.facebook.com/amycr3' target='_blank' title='No nudes'>
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href='https://plus.google.com/u/0/104403954448451052157/posts' target='_blank' title='tumbleweed.org'>
+                <i class="fa fa-google-plus"></i>
+              </a>
+            </li>
+            <li>
+              <a href='https://www.youtube.com/channel/UC9mAHkytd0l2dXELBJyC0Nw/videos' target='_blank' title='Chocolate raaaaain'>
+                <i class="fa fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href='https://www.pinterest.com' target='_blank' title='wow so chic'>
+                <i class="fa fa-pinterest"></i>
+              </a>
+            </li>
+          </ul>
         </li>
       </ul>
 
