@@ -19,7 +19,8 @@
 //= require smooth-scroll/dist/js/smooth-scroll.min.js
 //= require WOW/dist/wow.min.js
 //= require magnific-popup/dist/jquery.magnific-popup.min.js
-//= require stellar/jquery.stellar.min.js
+//= require parallax.min.js
 //
 //= require services
+//= require animations
 //= require_tree .

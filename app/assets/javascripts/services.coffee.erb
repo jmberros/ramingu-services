@@ -13,27 +13,15 @@ $ ->
 
 animateAllTheThings = ->
   $('#copylingual').find('.fa-arrow-down').addClass('pulse animated infinite')
-  # Reveal animations as you scroll
-  <%#$('.service img').each ->%>
-    <%#$(this)%>
-      <%#.addClass('wow fadeIn')%>
-      <%#.attr('data-wow-duration', '1.5s')%>
 
   new WOW().init()
 
 lazyLoadImages = ->
-  $('#page-content-wrapper').css(
-    'background',
-    'url(<%= asset_path("unsplash-city.jpg") %>) no-repeat fixed'
-  )
   $('.lazy-load').each ->
     src = this.getAttribute('data-src')
     $(this).hide().attr('src', src).fadeIn(1000)
 
 configureFeatures = ->
-  #mainNav()
-  #$(window).on('scroll', mainNav)
-
   # Spy scroll and activate current section in the topbar
   $('body').scrollspy target: '.navbar-fixed-top'
 
@@ -116,14 +104,3 @@ setupAJAXForm = ->
           .removeClass( 'flash animated infinite' )
       )
   )
-
-
-# Navbar hidden on arrival, but permanently visible after scroll
-#mainNav = ->
-#  $navbar = $('.navbar')
-#  if $(window).scrollTop() > 100
-#    $navbar.stop().animate(top: 0)
-#    $(window).off('scroll')
-#  else
-#    $navbar.stop().css(top: -51)
-

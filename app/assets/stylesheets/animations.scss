@@ -1,0 +1,40 @@
+.section-head h1 {
+  transition: font-size 0.25s;
+
+  &:hover {
+    /*font-size: 7em;*/
+  }
+}
+
+.footer .fa-envelope-o {
+  transition: transform 1s;
+
+  &:hover {
+    /*transform: rotate(180deg);*/
+  }
+}
+
+.navbar li {
+  transition: font-size 0.25s, transform 0.25s;
+
+  &:hover {
+    font-size: 18px;
+  }
+}
+
+.growable {
+  transition: font-size 0.2s;
+
+  &:hover{
+    font-size: 14px;
+  }
+}
+
+.portrait > img {
+  transition: border-radius 1s, transform 0.5s;
+
+  &:hover {
+    border-radius: 75%;
+    transform: rotate(-5deg);
+  }
+}

@@ -1,7 +1,7 @@
 <!-- Storyboard -->
 <div class='row service'>
 
-  <div class='col-md-6 col-sm-12'>
+  <div class='col-lg-4 col-lg-offset-2 col-md-6 col-xs-12'>
     <h3><%= t 'storyboard.title' %></h3>
     <p><%= t 'storyboard.description' %></p>
 
@@ -11,8 +11,8 @@
     </p>
   </div>
 
-  <div class='col-md-6 col-sm-12'>
-    <div class='popup-gallery'>
+  <div class='col-lg-4 col-md-6 col-xs-12'>
+    <div class='popup-gallery thumbnail-wrapper'>
       <% %w(b2x_features b2x_bed b2x_recipes b2x_glass).each do |filename| %>
         <a href="<%= image_path "#{filename}.png" %>">
           <%= image_tag "#{filename}-thumbnail.png", class: 'thumbnail greyed-out' %>
@@ -23,7 +23,6 @@
         <img class='thumbnail greyed-out' src="https://i.ytimg.com/vi/AvRa8oxS4Zw/mqdefault.jpg">
       </a> 
     </div>
-
   </div>
 
 </div>

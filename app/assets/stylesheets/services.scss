@@ -23,7 +23,7 @@ body {
 }
 
 .container-fluid {
-  max-width: $main-width;
+  /*max-width: $main-width;*/
 }
 
 .navbar-nav {
@@ -47,13 +47,11 @@ h1, h2, .navbar-brand {
 #page-content-wrapper {
   width: 100%;
   position: absolute;
-
-  /*background-color: gold;*/
-  /*background-blend-mode: multiply;*/
+  background: transparent;
 
   .container-fluid {
     background: white;
-    /*box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.75);*/
+    /*box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.75);*/
   }
 }
 
@@ -62,23 +60,26 @@ h1, h2, .navbar-brand {
   /*margin-right: -15px; // cancel out Bootstrap's .container-fluid padding*/
   /*margin-left: -15px; // cancel out Bootstrap's .container-fluid padding*/
   padding: 40px 0;
-  background: $bright-color;
+  background: rgb(228, 219, 174);
+  /*background: rgba(255, 215, 0, 0.3); // gold + opacity*/
+  /*background: transparent;*/
 
   text-align: center;
 
   h1 {
-    display: inline-block;
+    /*display: inline-block;*/
     vertical-align: middle;
+    margin-bottom: 20px;
     /*font-size: 60px;*/
     font-size: 6em;
   }
 
   p { 
-    display: inline-block;
+    /*display: inline-block;*/
     vertical-align: middle;
     font-size: 19px;
 
-    &:before { @include fading-hr; }
+    /*&:before { @include fading-hr; }*/
   }
 }
 
@@ -89,6 +90,13 @@ h1, h2, .navbar-brand {
 
   &:nth-of-type(even) {
     background: #EEE;
+  }
+  &:nth-of-type(odd) {
+  }
+
+
+  h4 {
+    margin-top: 20px;
   }
 }
 
@@ -125,7 +133,7 @@ h1, h2, .navbar-brand {
 .footer {
   margin: 0 -15px;
   padding-bottom: 80px;
-  background: #222;
+  background: $text-color;
   color: lighten($bright-color, 40%);
 
   h1, i {
@@ -136,7 +144,7 @@ h1, h2, .navbar-brand {
     float: right;
   }
 
-  button {
+  form button {
     background-color: $bright-color;
     color: #222;
     font-weight: bold;
@@ -151,6 +159,7 @@ h1, h2, .navbar-brand {
 }
 
 .popup-gallery {
+  margin: 15px 0;
   text-align: center;
 
   a:not(:first-child) {}
@@ -167,6 +176,12 @@ h1, h2, .navbar-brand {
 .thumbnail {
   display: inline-block;
   margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.thumbnail-help {
+  background: gold;
   max-width: 100%;
   max-height: 100%;
 }
